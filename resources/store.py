@@ -3,9 +3,11 @@ from flask import request
 from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 from db import stores
+from flask_cors import CORS
 
 
 blp = Blueprint("Stores", __name__, description="Operations on stores")
+CORS(blp)   # To integrate it with JavaScript.
 
 
 @blp.route("/store/<string:store_id>")
