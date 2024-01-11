@@ -4,6 +4,8 @@
 Store Project
 
 
+## Overview
+This project involves stores and items. Each store contains specific items, and the warehouse encompasses all the stores. The stores and items are linked throught the randomly generated ids. 
 ## Deployment
 
 
@@ -24,11 +26,7 @@ To auto run the docker whenever some changes are done in the app. (Optional)
 ```bash
 sudo docker run -dp 5000:5000 -w /app -v "$(pwd):/app" rest-api
 ```
-## Use
-This project involves stores and items. Each store contains specific items, and the warehouse encompasses all the stores. The stores and items are linked throught the randomly generated ids.
-## Use
-
-The stores and items are in the following format. Random ids have been assigned to stores and items for better accessing.
+## Example
 
 items = {67ddd636b0ed42a0adc8c7881d16c28d : "Name" : :Chair",
                                              "Price" : 17.99,
@@ -39,6 +37,7 @@ items = {67ddd636b0ed42a0adc8c7881d16c28d : "Name" : :Chair",
 store = {9805c262c62b4643becc07dc51f84a51 : {"id": "9805c262c62b4643becc07dc51f84a51",
    					     "name": "My Store2"
   				             },
+                   
 ## Screenshots
 
 Create (post) a new store
