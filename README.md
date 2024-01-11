@@ -28,6 +28,7 @@ sudo docker run -dp 5000:5000 -w /app -v "$(pwd):/app" rest-api
 ```
 ## Example
 
+```python
 items = {67ddd636b0ed42a0adc8c7881d16c28d : "Name" : :Chair",
                                              "Price" : 17.99,
                                              "item id" : 67ddd636b0ed42a0adc8c7881d16c28d
@@ -37,7 +38,8 @@ items = {67ddd636b0ed42a0adc8c7881d16c28d : "Name" : :Chair",
 store = {9805c262c62b4643becc07dc51f84a51 : {"id": "9805c262c62b4643becc07dc51f84a51",
    					     "name": "My Store2"
   				             },
-                   
+```
+         
 ## Screenshots
 
 Create (post) a new store
